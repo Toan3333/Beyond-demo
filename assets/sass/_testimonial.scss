@@ -1,0 +1,133 @@
+.testimonial {
+  padding: 14rem 0;
+  &-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
+  }
+
+  &-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.9rem;
+  }
+
+  &-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &-box {
+    background-color: $while;
+    border-radius: 1rem;
+    box-shadow: 0px 8px 55px rgba(155, 162, 173, 0.17);
+    padding: 2.8rem 1.8rem 6.4rem 2.6rem;
+    margin-bottom: 2.1rem;
+  }
+
+  &-user {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      border: 0.3rem solid #ffebce;
+      border-radius: 100rem;
+    }
+  }
+
+  &-star {
+    color: #000000;
+
+    i {
+      color: $orange;
+    }
+  }
+
+  &-content {
+    margin-top: 0.7rem;
+  }
+
+  &-name {
+    font-size: 1.3rem;
+    color: $heading-title;
+    line-height: 1.1rem;
+    margin-bottom: 0.8rem;
+  }
+
+  &-job {
+    font-size: 1.4rem;
+    line-height: 1.1rem;
+    color: #949cb7;
+    margin-bottom: 0.8rem;
+  }
+
+  &-desc {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2rem;
+    margin-bottom: 2.4rem;
+  }
+
+  &-quote {
+    text-align: right;
+    color: $orange;
+    font-size: 2.2rem;
+  }
+
+  &-check {
+    margin-top: 2rem;
+    margin-bottom: 3.8rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  &-mb {
+    margin-bottom: 0;
+  }
+
+  &-number {
+    color: #f4a11a;
+    font-size: 2.5rem;
+    line-height: 2.6rem;
+    font-weight: 600;
+  }
+
+  &-client {
+    color: #8189a3;
+  }
+
+  &-more {
+    max-width: 40rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .testimonial-flex {
+    flex-direction: column;
+  }
+  .testimonial-main {
+    gap: 7rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .testimonial {
+    padding: 8rem 0;
+  }
+  .testimonial-main {
+    display: flex;
+    flex-direction: column;
+  }
+  .testimonial-number {
+    font-size: 2rem;
+  }
+  .testimonial-client {
+    font-size: 1.4rem;
+  }
+}

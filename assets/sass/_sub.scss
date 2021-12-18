@@ -1,0 +1,87 @@
+.sub {
+  padding-bottom: 14rem;
+
+  &-box {
+    border-radius: 6.7rem;
+    background-color: #f4f6fd;
+    padding: 7.7rem 18.6rem;
+  }
+
+  &-left {
+    max-width: 40rem;
+    width: 100%;
+  }
+
+  &-title {
+    font-size: 4.8rem;
+    line-height: 5.8rem;
+    font-weight: 600;
+    color: $heading-title;
+    margin-bottom: 2.5rem;
+  }
+
+  &-desc {
+    line-height: 2.4rem;
+    font-weight: 500;
+  }
+
+  &-right {
+    width: 100%;
+  }
+
+  &-form {
+    position: relative;
+    input {
+      background-color: $while;
+      border-radius: 2.65rem;
+      padding: 1.5rem 0 2rem 2.1rem;
+      border: none;
+      width: 100%;
+    }
+  }
+
+  &-btn {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+  }
+
+  &-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .sub-box {
+    padding: 7.7rem 6.6rem;
+  }
+  .sub-title {
+    font-size: 3.8rem;
+    line-height: 4.8rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sub {
+    padding-bottom: 5rem;
+  }
+  .sub-main {
+    display: flex;
+    flex-direction: column;
+  }
+  .sub-box {
+    padding: 5rem 6rem;
+  }
+  .sub-title {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    margin-bottom: 2rem;
+  }
+  .sub-desc {
+    font-size: 1.4rem;
+  }
+}

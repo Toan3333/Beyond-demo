@@ -1,0 +1,101 @@
+.hero {
+  padding-bottom: 14rem;
+  &-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-content {
+    max-width: 49.6rem;
+    width: 100%;
+  }
+
+  &-image {
+    width: 100%;
+  }
+
+  &-heading {
+    font-size: 1.3rem;
+    line-height: 1.9rem;
+    color: $orange-heading;
+    letter-spacing: 18.5%;
+  }
+
+  &-title {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 5.6rem;
+    color: $heading-title;
+    margin-bottom: 2.5rem;
+    margin-top: 1rem;
+  }
+
+  &-desc {
+    color: $grey;
+    line-height: 2.6rem;
+    margin-bottom: 2.5rem;
+  }
+
+  &-button {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  &-video {
+    width: 5.9rem;
+    height: 5.9rem;
+    border-radius: 100rem;
+    display: inline-flex;
+    box-shadow: 0px 17px 25px rgba(140, 141, 146, 0.12);
+    background-color: $while;
+    align-items: center;
+    justify-content: center;
+
+    i {
+      color: $orange;
+    }
+  }
+
+  &-watch {
+    line-height: 2.4rem;
+    color: #101d48;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .hero {
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+
+  .hero-desc {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    padding-bottom: 8rem;
+  }
+  .hero-main {
+    flex-direction: column;
+  }
+  .hero-title {
+    font-size: 2.8rem;
+    line-height: 3.5rem;
+    margin-bottom: 2rem;
+  }
+  .hero-watch {
+    font-size: 1.4rem;
+  }
+  .hero-content {
+    margin-bottom: 2rem;
+  }
+}

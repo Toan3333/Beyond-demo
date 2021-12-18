@@ -1,0 +1,99 @@
+.service {
+  padding-top: 14rem;
+  padding-bottom: 7.8rem;
+
+  --columns: 1;
+
+  &-text {
+    margin-top: 3.2rem;
+    color: $grey;
+    line-height: 2.4rem;
+    text-align: center;
+  }
+
+  &-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3.3rem;
+    margin-top: 7.3rem;
+  }
+
+  &-box {
+    text-align: center;
+    padding: 4rem 4.5rem 8.7rem 4.5rem;
+  }
+
+  &-box:first-child {
+    background-color: $while;
+    border: 0.2rem solid #edeff7;
+    border-radius: 1.3rem;
+  }
+
+  &-box:nth-child(2) {
+    border-radius: 1.3rem;
+    background-color: $while;
+    box-shadow: 0px 24px 60px rgba(94, 122, 148, 0.1);
+  }
+
+  &-box:last-child {
+    background-color: $while;
+    border: 0.2rem solid #edeff7;
+    border-radius: 1.3rem;
+  }
+
+  &-image {
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-content {
+    text-align: center;
+    margin-top: 2.6rem;
+  }
+
+  &-heading {
+    font-size: 2.1rem;
+    line-height: 3.1rem;
+    font-weight: 600;
+    color: $heading-title;
+    margin-bottom: 1.9rem;
+  }
+
+  &-desc {
+    font-size: 1.4rem;
+    color: $text-gray-light;
+    line-height: 2.1rem;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .service {
+    padding-top: 8rem;
+  }
+  .service-title {
+    font-size: 3.8rem;
+    line-height: 4.5rem;
+  }
+  .service-main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .service-title {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+  }
+  .service-text {
+    margin-top: 1.4rem;
+  }
+  .service-main {
+    margin-top: 4rem;
+    grid-template-columns: var(--columns);
+  }
+  .service-heading {
+    font-size: 1.8rem;
+  }
+}

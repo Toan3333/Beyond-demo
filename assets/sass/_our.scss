@@ -1,0 +1,35 @@
+.our {
+  background-color: $bg-feature;
+
+  &-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.6rem;
+  }
+
+  &-content {
+    max-width: 50rem;
+    width: 100%;
+  }
+
+  &-image {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .our {
+    padding: 8rem 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .our {
+    padding: 5rem 0;
+  }
+  .our-main {
+    display: flex;
+    flex-direction: column;
+  }
+}

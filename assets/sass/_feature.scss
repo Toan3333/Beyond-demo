@@ -1,0 +1,34 @@
+.feature {
+  padding-bottom: 11.2rem;
+
+  &-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8.7rem;
+  }
+
+  &-image {
+    max-width: 60rem;
+    width: 100%;
+  }
+
+  &-content {
+    width: 100%;
+  }
+
+  &-desc {
+    margin-top: 2.5rem;
+    margin-bottom: 3.7rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .feature {
+    padding-bottom: 5rem;
+  }
+  .feature-main {
+    display: flex;
+    flex-direction: column;
+  }
+}
